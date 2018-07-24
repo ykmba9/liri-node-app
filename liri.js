@@ -6,24 +6,24 @@ var keys = require("./keys.js");
 	var Spotify = require('node-spotify-api');
 	var fs = require('fs');
 	var client = new Twitter(keys.twitter);
-	var input = process.argv;
-	var action = input[2];
-	var inputs = input[3];
+	var data = process.argv;
+	var action = data[2];
+	var input = data[3];
 	
 
 	switch (action) {
 		case "my-tweets":
-		twitter(inputs);
+		twitter(input);
 		break;
 	
 
 		case "spotify-this-song":
-		spotify(inputs);
+		spotify(input);
 		break;
 	
 
 		case "movie-this":
-		movie(inputs);
+		movie(input);
 		break;
 	
 
@@ -33,8 +33,8 @@ var keys = require("./keys.js");
 	};
 	
 
-	function twitter(inputs) {
-		var params = {screen_name: inputs, count: 20};
+	function twitter(input) {
+		var params = {screen_name: input, count: 20};
 		
 			client.get('statuses/user_timeline', params, function(error, tweets, response) {
 				if (!error) {
@@ -50,14 +50,14 @@ var keys = require("./keys.js");
 	}
 	
 
-	function spotify(inputs) {
+	function spotify(input) {
 	
 
 		var spotify = new Spotify(keys.spotify);
-			if (!inputs){
-	        	inputs = 'The Sign';
+			if (!input){
+	        	input = 'The Sign';
 	    	}
-			spotify.search({ type: 'track', query: inputs }, function(err, data) {
+			spotify.search({ type: 'track', query: input }, function(err, data) {
 				if (err){
 		            console.log('Error occurred: ' + err);
 		            return;
@@ -75,15 +75,15 @@ var keys = require("./keys.js");
 
 	
 
-	function movie(inputs) {
+	function movie(input) {
 	
 
-		var queryUrl = "http://www.omdbapi.com/?t=" + inputs + "&y=&plot=short&apikey=40e9cece";
+		var queryUrl = "http://www.omdbapi.com/?t=" + input + "&y=&plot=short&apikey=40e9cece";
 	
 
 		request(queryUrl, function(error, response, body) {
-			if (!inputs){
-	        	inputs = 'Mr Nobody';
+			if (!input){
+	        	input = 'Mr Nobody';
 	    	}
 			if (!error && response.statusCode === 200) {
 	
@@ -110,11 +110,11 @@ var keys = require("./keys.js");
 	  		}
 	
 
-			// Then split it by commas (to make it more readable)
+			// To make it more readable split it by commas. 
 			var dataArr = data.split(",");
 	
 
-			// Each command is represented. Because of the format in the txt file, remove the quotes to run these commands. 
+			
 			if (dataArr[0] === "spotify-this-song") {
 				var songcheck = dataArr[1].slice(1, -1);
 				spotify(songcheck);
