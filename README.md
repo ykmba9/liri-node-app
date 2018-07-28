@@ -21,7 +21,7 @@ In this assignment, challenge was to use Node JS to create a LIRI bot, like iPho
 
  *node liri.js my-tweets - It displays my last 20 tweets and when they were created in terminal/bash window.
 
- *node liri.js spotify-this-song <song name> - It shows the following information about the song in terminal/bash window: The song's name, preview link of the song from Spotify, the album that the song is taken from, Or if no song is passed through, it will default to "Florescent Adolescent" by Arctic Monkeys
+ *node liri.js spotify-this-song <song name> - It shows the following information about the song in terminal/bash window: The song's name, preview link of the song from Spotify, the album that the song is taken from, or if no song is passed through, it will default to "Florescent Adolescent" by Arctic Monkeys
 
  *node liri.js movie-this <movie name> - Shows the following information in terminal/bash: Title of the movie, year the movie came out, IMDB Rating of the movie, country where the movie was produced, language of the movie, Plot of the movie, actors in the movie, rotten Tomatoes Rating, rotten tomatoes URL Or if no movie is passed through, it will default to "Mr. Nobody"
 
@@ -33,15 +33,15 @@ In this assignment, challenge was to use Node JS to create a LIRI bot, like iPho
 
 - NPM packages used:    
 
-Twitter NPM Package - https://www.npmjs.com/package/twitter
+- Twitter NPM Package - https://www.npmjs.com/package/twitter
 
-Node-Spotify-API NPM Package - https://www.npmjs.com/package/node-spotify-api
+- Node-Spotify-API NPM Package - https://www.npmjs.com/package/node-spotify-api
 
-Request NPM Package - https://www.npmjs.com/package/request
+- Request NPM Package - https://www.npmjs.com/package/request
 
-OMDB API - http://www.omdbapi.com
+- OMDB API - http://www.omdbapi.com
 
-DotEnv - https://www.npmjs.com/package/dotenv
+- DotEnv - https://www.npmjs.com/package/dotenv
 
 - Built With
     - Git Bash Text Editor
