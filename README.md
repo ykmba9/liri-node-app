@@ -33,15 +33,15 @@ In this assignment, challenge was to use Node JS to create a LIRI bot, like iPho
 
 - NPM packages used:    
 
-- Twitter NPM Package - https://www.npmjs.com/package/twitter
+    - Twitter NPM Package - https://www.npmjs.com/package/twitter
 
-- Node-Spotify-API NPM Package - https://www.npmjs.com/package/node-spotify-api
+    - Node-Spotify-API NPM Package - https://www.npmjs.com/package/node-spotify-api
 
-- Request NPM Package - https://www.npmjs.com/package/request
+    - Request NPM Package - https://www.npmjs.com/package/request
 
-- OMDB API - http://www.omdbapi.com
+    - OMDB API - http://www.omdbapi.com
 
-- DotEnv - https://www.npmjs.com/package/dotenv
+    - DotEnv - https://www.npmjs.com/package/dotenv
 
 - Built With
     - Git Bash Text Editor
