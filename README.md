@@ -19,13 +19,13 @@ In this assignment, challenge was to use Node JS to create a LIRI bot, like iPho
 
 - Run commands: 
 
- *node liri.js my-tweets - It displays my last 20 tweets and when they were created in terminal/bash window.
+    - node liri.js my-tweets - It displays my last 20 tweets and when they were created in terminal/bash window.
 
- *node liri.js spotify-this-song <song name> - It shows the following information about the song in terminal/bash window: The song's name, preview link of the song from Spotify, the album that the song is taken from, or if no song is passed through, it will default to "Florescent Adolescent" by Arctic Monkeys
+    - node liri.js spotify-this-song <song name> - It shows the following information about the song in terminal/bash window: The song's name, preview link of the song from Spotify, the album that the song is taken from, or if no song is passed through, it will default to "Florescent Adolescent" by Arctic Monkeys
 
- *node liri.js movie-this <movie name> - Shows the following information in terminal/bash: Title of the movie, year the movie came out, IMDB Rating of the movie, country where the movie was produced, language of the movie, Plot of the movie, actors in the movie, rotten Tomatoes Rating, rotten tomatoes URL Or if no movie is passed through, it will default to "Mr. Nobody"
+    - node liri.js movie-this <movie name> - Shows the following information in terminal/bash: Title of the movie, year the movie came out, IMDB Rating of the movie, country where the movie was produced, language of the movie, Plot of the movie, actors in the movie, rotten Tomatoes Rating, rotten tomatoes URL Or if no movie is passed through, it will default to "Mr. Nobody"
 
- *node liri.js do-what-it-says - Takes the text from random.txt and runs the song through   spotify-this-song command
+    - node liri.js do-what-it-says - Takes the text from random.txt and runs the song through   spotify-this-song command
 
 
  - Tech used
